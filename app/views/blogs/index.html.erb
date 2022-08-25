@@ -16,7 +16,7 @@
               <p class="card-text"><%= truncate(blog.description , length:120) %></p>
               <%= link_to 'View' , blog , class: " btn btn-outline-primary" %>
               <% if logged_in? && (blog.user == current_user || current_user.admin?) %>
-                <%= link_to "Edit", edit_blog_path(blog), class: "btn btn-outline-info" %>
+                <%= link_to "Edit", edit_blog_path(blog), class: "btn btn-outline-success" %>
                 <%= link_to "Delete", blog_path(blog), class: "btn btn-outline-danger", method: :delete, data: {confirm: "Are you sure?"} %>
               <% end %>
             </div>

@@ -13,18 +13,20 @@
  *= require_tree .
  *= require_self
  */
- #logo {
+
+#home-index-content {
+    height: 33.2rem;
+    padding-top: 2.5rem;
+}
+
+#logo {
     float: left;
     font-size: 1.7em;
     letter-spacing: -1px;
     font-weight: bold !important;
 }
 
-#page-content {
-    background-color: lightgrey
-}
-
-#show-page-content {
+.page-content {
     background-color: lightgrey;
 }
 
@@ -33,21 +35,26 @@
     background-position: center center;
     background-repeat: no-repeat !;
     background-size: cover;
-    height: 425px;
+    height: 25rem;
 
-}
-
-#home-content {
-    margin-bottom: 4rem;
 }
 
 footer {
     text-align: center;
     padding: .4rem;
-    background-color: darkgray;
-    color: rgb(0, 0, 0);
+    background-color: #212529;
+    color: whitesmoke;
 }
 
 .rails-link {
     text-decoration: none;
 }
+
+#signup-form-bg {
+    height: 400px;
+}
+
+#session-new-content {
+    height: 33.2rem;
+}
+

@@ -8,5 +8,4 @@ Rails.application.routes.draw do
   post   'login',  to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
   
-  # match '*path', via: :all,to:'errors#page_not_found'
 end

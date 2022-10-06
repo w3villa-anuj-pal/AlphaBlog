@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
     end
   
     def index
-      @blogs = Blog.includes(:user)
+      @pagy, @blogs = pagy(Blog.includes(:user), items: 3)
     end
     
     def new
@@ -43,7 +43,7 @@ class BlogsController < ApplicationController
     private
   
     def blog_params
-      params.require(:blog).permit(:title, :description)
+      params.require(:blog).permit(:title, :description, :category_id)
     end
   
     def set_blog

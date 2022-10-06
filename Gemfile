@@ -6,6 +6,8 @@ ruby '3.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 gem 'hirb'
+gem 'friendly_id', '~> 5.4.0'
+gem 'pagy', '~> 5.10'
 # Use mysql as the database for Active Record
 
 # Use Puma as the app server
@@ -22,7 +24,6 @@ gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-gem 'will_paginate', '~> 3.1.0'
 gem 'rails-erd', group: :development
 
 # Use Active Storage variant

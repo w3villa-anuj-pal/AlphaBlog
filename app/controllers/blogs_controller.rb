@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
     end
   
     def index
-      @pagy, @blogs = pagy(Blog.includes(:user), items: 3)
+      @pagy, @blogs = pagy(Blog.includes(:user), items: 4)
     end
     
     def new

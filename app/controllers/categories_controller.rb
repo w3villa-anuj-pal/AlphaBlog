@@ -3,7 +3,7 @@ class CategoriesController < ApplicationController
   before_action :find_id, only: [:show, :edit, :update, :destroy]
 
   def index
-    @pagy , @categories = pagy(Category.all, items: 3)
+    @pagy , @categories = pagy(Category.all, items: 4)
   end
 
   def show
@@ -27,7 +27,7 @@ class CategoriesController < ApplicationController
 
   def update
     if @category.update(set_params)
-      redirect_to @categories_path, :notice=>"Category was successfully updated."
+      redirect_to categories_path, :notice=>"Category was successfully updated."
     else
       render :edit
     end

@@ -8,6 +8,7 @@ gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 gem 'hirb'
 gem 'friendly_id', '~> 5.4.0'
 gem 'pagy', '~> 5.10'
+gem "letter_opener", group: :development
 
 # Use Puma as the app server
 gem 'puma', '~> 5.0'

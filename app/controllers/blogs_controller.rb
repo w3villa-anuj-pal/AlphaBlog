@@ -21,6 +21,7 @@ class BlogsController < ApplicationController
       @blog = Blog.new(blog_params)
       @blog.user = current_user
       if @blog.save
+        PostMailer.with(user: current_user, blog: @blog).blog_created.deliver_later
         redirect_to @blog, :notice => "Blog was successfully created."
       else
         render :new
